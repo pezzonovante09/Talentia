@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Talentia/static/css/main.cad5e946.css",
-    "main.js": "/Talentia/static/js/main.12bc2ace.js",
+    "main.js": "/Talentia/static/js/main.3289e8e8.js",
     "static/js/453.18f94f3f.chunk.js": "/Talentia/static/js/453.18f94f3f.chunk.js",
     "index.html": "/Talentia/index.html",
     "main.cad5e946.css.map": "/Talentia/static/css/main.cad5e946.css.map",
-    "main.12bc2ace.js.map": "/Talentia/static/js/main.12bc2ace.js.map",
+    "main.3289e8e8.js.map": "/Talentia/static/js/main.3289e8e8.js.map",
     "453.18f94f3f.chunk.js.map": "/Talentia/static/js/453.18f94f3f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cad5e946.css",
-    "static/js/main.12bc2ace.js"
+    "static/js/main.3289e8e8.js"
   ]
 }
