@@ -3,44 +3,7 @@ import { Link } from "react-router-dom";
 import ScreenSection from "../components/ScreenSection";
 import PrimaryButton from "../components/ui/PrimaryButton";
 import CharacterBubble from "../components/ui/CharacterBubble";
-
-const islands = [
-  {
-    name: "Math Island",
-    path: "/island/math",
-    color: "from-emerald-400 to-lime-500",
-    icon: "🔢",
-    description: "Counting + numbers",
-  },
-  {
-    name: "Logic Island",
-    path: "/island/logic",
-    color: "from-amber-300 to-orange-400",
-    icon: "🧠",
-    description: "Riddles & patterns",
-  },
-  {
-    name: "Shapes Island",
-    path: "/island/shapes",
-    color: "from-cyan-300 to-sky-400",
-    icon: "🟣",
-    description: "Shapes & colors",
-  },
-  {
-    name: "Memory Isle",
-    path: "/island/memory",
-    color: "from-rose-300 to-pink-400",
-    icon: "🧩",
-    description: "Remember & match",
-  },
-  {
-    name: "Patterns Cove",
-    path: "/island/patterns",
-    color: "from-violet-300 to-indigo-400",
-    icon: "🌈",
-    description: "Complete the path",
-  },
-];
+import ISLANDS from "../data/islands";
 
 export default function MapScreen() {
   return (
@@ -67,15 +30,15 @@ export default function MapScreen() {
 
         <div className="relative w-full max-w-4xl rounded-[48px] border-4 border-white/80 bg-white/70 p-6 shadow-2xl">
           <div className="absolute inset-0 rounded-[48px] bg-[radial-gradient(circle,_rgba(255,255,255,0.6)_1px,_transparent_1px)] bg-[length:40px_40px] opacity-70" />
-          <div className="relative grid grid-cols-2 gap-4 sm:grid-cols-3">
-            {islands.map((island, index) => (
+          <div className="relative grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+            {ISLANDS.map((island) => (
               <Link
-                key={island.name}
-                to={island.path}
+                key={island.id}
+                to={`/island/${island.id}`}
                 className="group focus:outline-none focus-visible:ring-4 focus-visible:ring-emerald-200"
               >
                 <div
-                  className={`flex h-40 flex-col items-center justify-center rounded-[36px] border-4 border-white bg-gradient-to-br ${island.color} text-center text-white shadow-xl shadow-emerald-900/10 transition duration-200 hover:-translate-y-1 hover:scale-[1.03] active:scale-95`}
+                  className={`flex h-36 flex-col items-center justify-center rounded-[32px] border-4 border-white bg-gradient-to-br ${island.color} text-center text-white shadow-xl shadow-emerald-900/10 transition duration-200 hover:-translate-y-1 hover:scale-[1.03] active:scale-95`}
                 >
                   <span className="text-4xl sm:text-5xl">
                     {island.icon}
@@ -93,8 +56,7 @@ export default function MapScreen() {
         </div>
 
         <CharacterBubble className="max-w-md text-center">
-          Psst! More islands are coming soon. For now, explore the ones glowing
-          brightest.
+          Choose any island to answer a quick math challenge with Tali.
         </CharacterBubble>
 
         <div className="w-full max-w-xs space-y-3">
