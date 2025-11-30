@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Talentia/static/css/main.b2f7dd6b.css",
+    "main.js": "/Talentia/static/js/main.a5a0a0bd.js",
+    "static/js/453.18f94f3f.chunk.js": "/Talentia/static/js/453.18f94f3f.chunk.js",
+    "index.html": "/Talentia/index.html",
+    "main.b2f7dd6b.css.map": "/Talentia/static/css/main.b2f7dd6b.css.map",
+    "main.a5a0a0bd.js.map": "/Talentia/static/js/main.a5a0a0bd.js.map",
+    "453.18f94f3f.chunk.js.map": "/Talentia/static/js/453.18f94f3f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2f7dd6b.css",
+    "static/js/main.a5a0a0bd.js"
+  ]
+}

@@ -32,7 +32,7 @@ export default function useChatAssistant(questionText = "") {
       const payload = {
         contents: [
           {
-            role: "user",
+            role: "user", 
             parts: [
               {
                 text:
