@@ -13,3 +13,4 @@ export default function DinoCharacter({ size = "w-48", className = "" }) {
   );
 }
 
+
